@@ -6,53 +6,70 @@
     <title>Formularios: inputs</title>
 </head>
 <body>
-    <h1>Formularios</h1>
-    <h2>Tipos de entrada o inputs</h2>
-    <form>
-        <!-- inputs: texto -->
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" minlength="4" maxlength="10" placeholder="ingrese su nombre"><br><br>
-        <!-- inputs: correo electronico -->
-        <label for="email">correo electronico</label>
-        <input type="email" id="email" name="email" placeholder="tu correo electronico" ><br><br>
+    <header>
+        <h1>Formularios</h1>
+        <h2>Tipos de entrada o inputs</h2>
+    </header>
+    <main>
+        <form>
+            <!-- inputs: texto -->
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" minlength="4" maxlength="10" placeholder="ingrese su nombre"><br><br>
+            <!-- inputs: correo electronico -->
+            <label for="email">correo electronico</label>
+            <input type="email" id="email" name="email" placeholder="tu correo electronico"><br><br>
 
-        <!-- inputs: password -->
-        <label for="password">Ingresa tu contraseña</label>
-        <input type="password" id="password" name="password" placeholder="ingresa tu contraseña"><br><br>
-        
-        <!-- inputs: area de texto -->
-        <label for="comentarios">Comentarios</label>
-        <textarea rows="8" cols="40" id="comentarios" name="comentarios" placeholder="Deja tus comentarios para que puedas seguir mejorando"></textarea><br><br>
-        
-        <!-- inputs: botones de radio -->
-        <p>Genero</p>
-        <input type="radio" id="masculino" name="genero" value="masculino">
-        <label for="masculino">masculino</label>
-        <input type="radio" id="femenino" name="genero" value="femenino">
-        <label for="femenino">femenino</label>
-        <input type="radio" id="nobinario" name="genero" value="nobinario">
-        <label for="nobinario">no binario</label>
-        <br><br>
+            <!-- inputs: password -->
+            <label for="password">Ingresa tu contraseña</label>
+            <input type="password" id="password" name="password" placeholder="ingresa tu contraseña"><br><br>
+            
+            <!-- inputs: area de texto -->
+            <label for="comentarios">Comentarios</label>
+            <textarea rows="8" cols="40" id="comentarios" name="comentarios" placeholder="Deja tus comentarios para que puedas seguir mejorando"></textarea><br><br>
+            
+            <!-- inputs: botones de radio -->
+            <p>Genero</p>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">masculino</label>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">femenino</label>
+            <input type="radio" id="nobinario" name="genero" value="nobinario">
+            <label for="nobinario">no binario</label>
+            <br><br>
 
-        <!-- inputs: checkbox -->
-        <p>intereses</p>
-        <input type="checkbox" id="deportes" name="intereses" value="deportes">
-        <label for="deportes">deportes</label>
-        <input type="checkbox" id="musica" name="intereses" value="musica">
-        <label for="musica">musica</label>
-        <input type="checkbox" id="viajes" name="intereses" value="viajes">
-        <label for="viajes">viajes</label>
-        <br><br>
+            <!-- inputs: checkbox -->
+            <p>intereses</p>
+            <input type="checkbox" id="deportes" name="intereses" value="deportes">
+            <label for="deportes">deportes</label>
+            <input type="checkbox" id="musica" name="intereses" value="musica">
+            <label for="musica">musica</label>
+            <input type="checkbox" id="viajes" name="intereses" value="viajes">
+            <label for="viajes">viajes</label>
+            <br><br>
 
-        <p>Terminos y condiciones</p>
-        <input type="checkbox" id="terminos" name="terminos" value="acepta" required checked>
-        <label for="terminos">Acepto los terminos y condiciones</label>
+            <!-- Lista desplegable -->
+            <label for="pais">País</label>
+            <select id="pais" name="pais" required>
+                <option value="" disabled selected>-- seleccione un pais --</option>
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="mexico">Mexico</option>
+                <option value="uruguay">Uruguay</option>
+            </select>
 
-        <br><br>
-        <!-- resetear -->
-        <input type="reset" value="limpiar">
-        <!-- envio del formulario -->
-        <input type="submit" value="enviar">
-    </form>
+            <p>Terminos y condiciones</p>
+            <input type="checkbox" id="terminos" name="terminos" value="acepta" required checked>
+            <label for="terminos">Acepto los terminos y condiciones</label>
+
+            <br><br>
+            <!-- resetear -->
+            <input type="reset" value="limpiar">
+            <!-- envio del formulario -->
+            <input type="submit" value="enviar">
+        </form>
+    </main>
+    <footer>
+        HTML 
+    </footer>
 </body>
 </html>

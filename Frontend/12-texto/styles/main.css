@@ -1,0 +1,188 @@
+/* Propiedades de texto */
+/* specificar la familia de fuentes */
+
+html {
+    font-size: 16px;
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  /* body */
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+/* Tamaños de fuentes */
+/* fs- fontsize */
+
+.fs-regular {
+    font-size: 1rem; /* medida relativa al body = 16px */
+}
+
+.fs-medium {
+    font-size: 1.2rem;
+}
+
+.fs-large {
+    font-size: 1.4rem; /* 40px */
+}
+
+.fs-xxlarge {
+    font-size: 2.5rem; /* 40px */
+}
+
+/* grosor de la fuente */
+
+.fw-bold {
+    font-weight: bold;
+}
+
+/* color aplica para texto */
+
+/* colores hexadecimales */
+
+.col-primary {
+    /* background-color: aqua; */
+    color: #505fb3;
+}
+
+.col-secondary {
+    color: #b3a450;
+} 
+
+/* alineacion de texto */
+
+.al-center {
+    text-align: center;
+}
+
+/* text decoration */
+
+.tdec-overline {
+    text-decoration-line: overline;
+}
+
+.tdec-through {
+    text-decoration-line: line-through;
+    text-decoration-color: #c35563;
+}
+
+.tdec-underline {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+.tdec-thick {
+    text-decoration-line: underline;
+    text-decoration-color: #b3a450;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 4px;
+}
+
+/* lo mismo de .tdec-thick pero con un shortcut */
+
+.tdec-thic-short {
+    text-decoration: underline #b3a450 4px dashed;
+}
+
+.tdec-muestra {
+    background-color: yellow;
+    text-decoration-line: line-through;
+    text-decoration-color: red;
+}
+
+/* alineacion de texto para parrafos*/
+
+.ta-left {
+    text-align: left;
+}
+
+.ta-right {
+    text-align: right;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.ta-justify {
+    text-align: justify;
+}
+
+.ttr-capitalize {
+    text-transform: capitalize;
+}
+
+.ttr-uppercase {
+    text-transform: uppercase;
+}
+
+.ttr-lowercase {
+    text-transform: lowercase;
+}

@@ -1,0 +1,55 @@
+/* 
+selector {
+    propiedad: valor;
+}
+*/
+
+/* selector de elementos */
+
+h1 {
+    color: crimson;
+    font-size: 34px;
+    font-family: system-ui;
+}
+
+h2 {
+    color: brown;
+    font-size: 32px;
+}
+
+p {
+    color: blueviolet;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+small {
+    color: grey;
+}
+
+h1 {
+    color: green;
+}
+
+/* selector de clase */
+
+.parrafo-alerta  {
+    color: red;
+    font-weight: 900;
+    
+}
+
+.parrafo-comun {
+    color: blue;
+}
+
+.parrafo-med {
+    font-size: 16px;
+}
+
+/* selector de id */
+/* no es recomendable */
+
+#titulo-3 {
+    text-align: center;
+}
