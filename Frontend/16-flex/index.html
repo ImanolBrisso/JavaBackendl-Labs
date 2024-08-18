@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <link rel="stylesheet" href="style/flex.css">
+</head>
+<body>
+    <header>
+        <h1>Flexbox</h1>
+        <p>Sistema flexible</p>
+    </header>
+    <h2>Flex por omision, solo display: flex</h2>
+    <div class="container container-flex">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 5</div>
+        <div class="box">box 7</div>
+        <div class="box">box 8</div>
+    </div>
+    <h2>Flex-direction</h2>
+    <h3>Row</h3>
+    <div class="container container-flex direction-row">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 5</div>
+        <div class="box">box 7</div>
+        <div class="box">box 8</div>
+    </div>
+    <h3>Column</h3>
+    <div class="container container-flex direction-column">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+    </div>
+    <h3>Row-reverse</h3>
+    <div class="container container-flex direction-row-reverse">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 5</div>
+        <div class="box">box 7</div>
+        <div class="box">box 8</div>
+    </div>
+    <h3>Column</h3>
+    <div class="container container-flex direction-column-reverse">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+    </div>
+    <h2>Justify Content</h2>
+    <p>Como se distribuyen los elementos a lo largo del eje principal</p>
+    <h3>Flex start</h3>
+    <div class="container container-flex direction-row jc-start">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 5</div>
+        <div class="box">box 7</div>
+        <div class="box">box 8</div>
+    </div>
+    <h3>Space-Around</h3>
+    <div class="container container-flex direction-row jc-space-around">
+        <div class="box"><p>box 1</p></div>
+        <div class="box"><p>box 2</p></div>
+        <div class="box"><p>box 3</p></div>
+        <div class="box"><p>box 4</p></div>
+        <div class="box"><p>box 5</p></div>
+        <div class="box"><p>box 7</p></div>
+        <div class="box"><p>box 8</p></div>
+    </div>
+    <h3>Space-Between</h3>
+    <div class="container container-flex direction-row jc-space-between">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 5</div>
+        <div class="box">box 7</div>
+        <div class="box">box 8</div>
+    </div>
+    <h3>Space-Evenly</h3>
+    <div class="container container-flex direction-row jc-space-evenly">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 5</div>
+        <div class="box">box 7</div>
+        <div class="box">box 8</div>
+    </div>
+    <h2>Align content</h2>
+    <p>Controla como se alinean los elmentos a lo largo del eje secundario</p>
+    <h3>flex-start</h3>
+    <div class="container container-flex direction-row ac-flex-start">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+    </div>
+    <h3>flex-end</h3>
+    <div class="container container-flex direction-row ac-flex-end">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+    </div>
+    <h3>center</h3>
+    <div class="container container-flex direction-row ac-flex-center">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+    </div>
+</body>
+</html>

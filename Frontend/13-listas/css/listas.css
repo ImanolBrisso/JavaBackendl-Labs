@@ -1,0 +1,37 @@
+.list-circle {
+    /* list-style: circle; */
+    list-style-image: url(../img/lista.png);
+}
+
+.list-square {
+    list-style: square;
+    list-style-position: inside;
+    background-color: aquamarine;
+}
+
+.list-square li {
+    background-color: burlywood;
+}
+
+.list-none {
+    list-style: none;
+}
+
+.list-ol-roman {
+    list-style-type: upper-roman;
+}
+
+/* pseudoclases */
+
+.list-ol-roman li:first-child {
+    background-color: coral;
+}
+
+.list-ol-roman li:nth-child(4) {
+    background-color: cornflowerblue;
+}
+
+.list-ol-roman li:last-child {
+    background-color: rgba(210, 105, 30, 0.5);
+    border: 2px dotted chocolate;
+}

@@ -1,0 +1,103 @@
+/* Flexbox */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: .75rem;
+}
+.container {
+    padding: 1rem;
+}
+
+.container-flex {
+    display: flex;
+    background-color: #F3E5F5;
+    flex-wrap: wrap;
+}
+
+.direction-row {
+    flex-direction: row;
+}
+
+
+.direction-column {
+    flex-direction: column;
+}
+
+.direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.direction-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.jc-start {
+    justify-content: flex-start;
+}
+
+.jc-space-between {
+    justify-content: space-between;
+}
+
+.jc-space-around {
+    justify-content: space-around;
+}
+
+.jc-space-evenly {
+    justify-content: space-evenly;
+}
+
+.ac-flex-start {
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.ac-flex-end {
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+.ac-flex-center {
+    flex-direction: column;
+    align-content: center;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 72px;
+    height: 72px;
+    color: #000;
+    background-color: #90CAF9;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.50);
+    border: 1px solid #1976D2;
+    border-radius: 4px;
+    margin: 1rem;
+    padding: .5rem;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.box:hover {
+    color: #FFF;
+    background-color: #1976D2;
+    border-color: #90CAF9;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
