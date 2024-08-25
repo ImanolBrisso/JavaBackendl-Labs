@@ -24,11 +24,11 @@
             <form class="form-registro">
                 <h2>Registro de Usuario</h2>
                 <div class="form-group">
-                    <label for="nombre">Nombre:</label>
+                    <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu primer nombre">
                 </div>
                 <div class="form-group">
-                    <label for="apellido">Apellido:</label>
+                    <label for="apellido">Apellido</label>
                     <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu primer apellido">
                 </div>
                 <div class="form-group">
@@ -36,18 +36,69 @@
                     <input type="password" id="pass1" name="pass1" placeholder="Ingresa tu Contraseña">
                     <input type="password" id="pass2" name="pass2" placeholder="Ingresa nuevamente tu Contraseña">
                 </div>
+                <div class="form-group">
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" name="email" placeholder="Ingresa tu email" required> 
+                </div>
+                
                 <!-- Genero -->
-
+                <div class="form-group">
+                    <label>Género</label>
+                    <div class="flex-group">
+                        <label for="masculino">
+                            <input type="radio" id="masculino" name="genero" value="masculino">
+                            Masculino
+                        </label>
+                        <label for="femenino">
+                            <input type="radio" id="femenino" name="genero" value="femenino">
+                            Femenino
+                        </label>
+                        <label for="otro">
+                            <input type="radio" id="otro" name="genero" value="otro">
+                            Otro
+                        </label>
+                    </div>
+                </div>
                 <!-- Intereses -->
-
+                <div class="form-group">
+                    <label>Intereses</label>
+                    <div class="flex-group">
+                        <label for="tecnologia">
+                            <input type="checkbox" id="tecnologia" name="Intereses" value="tecnologia">
+                            Tecnología
+                        </label>
+                        <label for="deporte">
+                            <input type="checkbox" id="deporte" name="Intereses" value="deporte">
+                            Deporte
+                        </label>
+                        <label for="musica">
+                            <input type="checkbox" id="musica" name="Intereses" value="musica">
+                            Música
+                        </label>
+                        
+                    </div>
+                </div>
                 <!-- Paises -->
-
+                <div class="form-group">
+                    <label for="pais">Pais</label>
+                    <select id="pais" required>
+                        <option value="" selected disabled>-- selecciona un pais --</option>
+                        <option value="uy">Uruguay</option>
+                        <option value="ar">Argentina</option>
+                        <option value="br">Brasil</option>
+                        <option value="ch">Chile</option>
+                        <option value="co">Colombia</option>
+                    </select>
+                </div>
                 <!-- Botones -->
-
+                <div class="form-group button-group">
+                    <input type="submit" value="registrar">
+                    <input type="reset" value="limpiar">
+                </div>
             </form>
         </main>
         <footer>
-    
+            <small>&copy; Java Backend I 2024</small>
         </footer>
     </div>
 </body>
