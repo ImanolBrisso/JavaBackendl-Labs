@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    <header>
+        <h1>Formulario de preferencia de Videojuegos </h1>
+        <h2>Aquí podras elegir y optar por tus tipos o géneros de juegos favoritos </h2>
+        <h3>¡De esta manera podemos darte las mejores recomendaciones de este 2024!</h3>
+    </header>
+    <form>
+        <br><br>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre" required><br><br>
+        <label for="nombre">Apellido</label>
+        <input type="text" id="nombre" name="nombre" placeholder="ingrese su apellido" required><br><br>
+        
+
+        <label for="nombre-usuario">Usuario</label>
+        <input  type="text" id="nombre-usuario" name="nombre-usuario" placeholder="ingrese un usuario" required><br><br>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="ingrese su correo" required><br><br>
+
+        <label for="country">Localidad</label>
+        <input type="text" id="country" name="country" placeholder="ingrese su nacionalidad" required><br><br>
+        
+        <label for="Descripción">Bio</label>
+        <textarea rows="6" cols="30" id="Descripción" name="Descripción" placeholder="Aquí puedes dejar una descripción sobre ti"></textarea><br><br>
+
+        <p class="Genero">Género</p>
+         <input type="radio" id="masculino" name="genero" value="masculino">
+         <label for="masculino">masculino</label>
+         <input type="radio" id="femenino" name="genero" value="femenino">
+         <label for="femenino">femenino</label>
+         <input type="radio" id="otro" name="genero" value="otro">
+         <label for="otro">otro</label>
+
+         <p class="Cla">Géneros de Videojuegos favoritos</p>
+         <input type="checkbox" id="accion" name="clasificacion" value="accion">
+         <label for="accion">Acción</label>
+         <input type="checkbox" id="lucha" name="clasificacion" value="lucha">
+         <label for="lucha">Lucha</label>
+         <input type="checkbox" id="plataformas" name="clasificacion" value="plataformas">
+         <label for="plataformas">Plataformas</label>
+         <input type="checkbox" id="fps" name="clasificacion" value="fps">
+         <label for="fps">FPS (First Person Shooter)</label>
+         <input type="checkbox" id="supervivencia" name="clasificacion" value="supervivencia">
+         <label for="supervivencia">Supervivencia</label>
+         <input type="checkbox" id="aventura" name="clasificacion" value="aventura">
+         <label for="aventura">Aventura</label>
+         <input type="checkbox" id="horror" name="clasificacion" value="horror">
+         <label for="horror">Horror</label>
+         <input type="checkbox" id="moba" name="clasificacion" value="moba">
+         <label for="moba">Moba</label>
+         <input type="checkbox" id="arcade" name="clasificacion" value="arcade">
+         <label for="arcade">Arcade</label>
+         <input type="checkbox" id="mmo" name="clasificacion" value="mmo">
+         <label for="mmo">MMO (Massively Multiplayer Online)</label>
+         <input type="checkbox" id="rpg" name="clasificacion" value="rpg">
+         <label for="rpg">RPG</label>
+         <input type="checkbox" id="roguelikes" name="clasificacion" value="roguelikes">
+         <label for="roguelikes">Roguelikes</label>
+         <input type="checkbox" id="simulacion" name="clasificacion" value="simulacion">
+         <label for="simulacion">Simulacion</label>
+         <input type="checkbox" id="deportes" name="clasificacion" value="deportes">
+         <label for="deportes">Deportes</label>
+         <input type="checkbox" id="texto" name="clasificacion" value="texto">
+         <label for="texto">Texto</label><br><br>
+         
+
+         <p class="TyC">Términos y condiciones</p>
+          <input type="checkbox" id="terminos" name="terminos" value="acepta" required checked>
+          <label for="terminos">Acepto los términos y condiciones</label><br><br>
+
+
+         
+        <input type="reset" value="Borrar">
+        <input type="submit" value="Aceptar y Enviar">
+
+
+    </form> <br><br>
+    <footer>
+        <small>&copy; Formulario - ImanolBrisso </small> 
+    </footer>
+</body>
+</html>
