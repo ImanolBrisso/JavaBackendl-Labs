@@ -9,12 +9,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+// Este es un controlador de Spring MVC
 @Controller
 public class PersonaController {
 
     @Autowired
     private PersonaRepository personaRepository;
 
+    // se establecen los metodos manejadores de get y post - se recuperan y envian datos
+
+    // es el manejador de la raiz
     @GetMapping("/")
     public String verPaginaInicio(Model modelo) {
         modelo.addAttribute("personas", personaRepository.findAll());
