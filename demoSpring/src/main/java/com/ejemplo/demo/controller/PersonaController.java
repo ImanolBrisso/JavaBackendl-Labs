@@ -25,12 +25,15 @@ public class PersonaController {
         return "index";
     }
 
+
+    // mostrar un formulario para crear una persona nueva - Retorna
     @GetMapping("/nueva")
     public String mostrarFormularioPersona(Model modelo) {
         modelo.addAttribute("persona", new Persona());
         return "nueva_persona";
     }
 
+    // maneja el envio del formulario y guarda a la persona - Redirecciona a la raiz del manejador getmapping
     @PostMapping("/guardar")
     public String guardarPersona(@ModelAttribute Persona persona) {
         personaRepository.save(persona);
