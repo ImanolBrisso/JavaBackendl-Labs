@@ -1,23 +1,21 @@
 package com.ejemplo.tienda.model;
 
 import jakarta.persistence.*;
-import java.util.*;
+import java.util.List;
 
+@Entity
 public class Categoria {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id; // anotaciones para un campo - clave primaria
+    private Long id;
 
     private String nombre;
 
-    // relacion One-To-Many con producto. - Una categoria le puede permanecer a muchos productos pero no viceversa
-
-    // Diseño base de datos
+    // relacion One-To-Many con producto. Uno a muchos.
     @OneToMany(mappedBy = "categoria")
     private List<Producto> productos;
 
     public Categoria() {
-
     }
 
     public Categoria(String nombre) {
