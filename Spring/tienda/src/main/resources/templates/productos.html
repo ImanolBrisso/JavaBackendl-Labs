@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- Para poder usar java en html -->
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Lista de Productos</title>
 </head>
 <body>
-
+<h1> Lista de productos</h1>
+<a href="/productos/nuevo">Agregar Producto</a>
+<!-- a= anchor -->
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Categoria</th>
+    </tr>
+    <!-- primero se crean categorias luego productos y mostrar los productos debe de tener un formulario para mostrarlos, asi sucesivamente -->
+    <!-- tr = table row -->
+    <!-- tr = table data -->
+    <!-- con el thymeleaf (th) ya puedo escribir en modo JAVA - es decir lenguaje de template -->
+    <tr th:each="producto: ${paginaProductos.content}">
+        <td th:text="${producto.id}"></td>
+        <td th:text="${producto.nombre}"></td>
+        <td th:text="${producto.precio}"></td>
+        <td th:text="${producto.Categoria}"></td>
+    </tr>
+</table>
 </body>
 </html>

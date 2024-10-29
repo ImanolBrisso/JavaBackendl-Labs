@@ -10,12 +10,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-
 public class ProductoController {
 
     @Autowired // simplifica la creacion de las instancias - las crea cuando las necesita
     private ProductoRepository productoRepository; // primer metodo a iniciarse
 
+    // page: indica la pagina y size el tamaño
     @GetMapping("/productos")// metodo
     public String listarProductos(Model model, int page, int size) {
         Page<Producto> paginaProductos = productoRepository.findAll(PageRequest.of(page, size));
