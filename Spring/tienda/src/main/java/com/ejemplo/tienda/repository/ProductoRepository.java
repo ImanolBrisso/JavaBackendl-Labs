@@ -17,4 +17,6 @@ public interface ProductoRepository extends JpaRepository<Producto, Long> {
     // IgnoreCase: no le hace caso a las mayúsculas o minusculas
     // countBy (COUNT(*), COUNT(nombre))
     Page<Producto>findByNombreContainingIgnoreCase(String nombre, Pageable pageable); // se busca por filtro - select from where - nombre
+
+    Page<Producto> findAll(Pageable pageable); // todos los registros paginables, nos trae todos los resultados en pantalla
 }
