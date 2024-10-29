@@ -4,8 +4,8 @@ import jakarta.persistence.*;
 
 @Entity
 public class Producto {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id // Para dejar "numero largo"
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // se usan identificadores para las bases de datos autogeneradas
     private Long id;
 
     private String nombre;
