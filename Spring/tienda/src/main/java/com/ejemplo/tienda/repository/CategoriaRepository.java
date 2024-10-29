@@ -1,6 +1,6 @@
 package com.ejemplo.tienda.repository;
 
-// Aca de se modifica las consultas de datos
+// Aca de se modifica las consultas de datos también
 
 import com.ejemplo.tienda.model.Categoria;
 import org.springframework.data.jpa.repository.JpaRepository;
