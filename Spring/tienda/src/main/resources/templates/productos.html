@@ -20,6 +20,7 @@
     <!-- tr = table row -->
     <!-- tr = table data -->
     <!-- con el thymeleaf (th) ya puedo escribir en modo JAVA - es decir lenguaje de template -->
+    <!-- con el th: each recorro los elementos = for each -->
     <tr th:each="producto: ${paginaProductos.content}">
         <td th:text="${producto.id}"></td>
         <td th:text="${producto.nombre}"></td>
@@ -27,5 +28,11 @@
         <td th:text="${producto.Categoria}"></td>
     </tr>
 </table>
+<!-- paginacion -->
+<div>
+    <a>anterior</a>
+    <span>Pagina</span>
+    <a>Siguiente</a>
+</div>
 </body>
 </html>
